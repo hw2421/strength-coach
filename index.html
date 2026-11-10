@@ -157,8 +157,8 @@ table.cmp tbody tr:hover td.rowhead{background:#1a2f45}
 .homecards.duo{grid-template-columns:repeat(2,1fr);gap:11px}
 .homecard.modcard{padding:20px 16px 22px;min-height:132px;border-color:#2f5468;
   background:linear-gradient(165deg,#16293c 0%,#122133 100%);position:relative}
-.homecard.modcard strong{font-size:20px;color:#9fe8ee;letter-spacing:.5px;display:block;margin-bottom:8px}
-.homecard.modcard p{font-size:11.5px;line-height:1.7;color:#a9bfd3;margin:0;flex:none;max-width:88%}
+.homecard.modcard strong{font-size:18.5px;color:#9fe8ee;letter-spacing:.3px;display:block;margin-bottom:7px;line-height:1.35}
+.homecard.modcard p{font-size:11px;line-height:1.65;color:#a9bfd3;margin:0;flex:none;max-width:100%}
 .homecard.modcard .modarrow{position:absolute;right:15px;bottom:14px;color:#7dd5dc;font-size:19px;font-weight:700}
 .techsection{margin:30px 0 14px}
 .techsection>h2{font-size:16px;margin:0;color:var(--forest);font-weight:750;letter-spacing:.02em;padding-left:10px;border-left:3px solid var(--rust);line-height:1.5}
@@ -183,6 +183,32 @@ table.cmp tbody tr:hover td.rowhead{background:#1a2f45}
  .homecard.modcard strong{font-size:18px}
  .homecard.modcard p{font-size:10.5px}
 }
+
+/* ===== 动作系列详情 ===== */
+.liftnav{position:sticky;top:0;z-index:9;background:var(--paper);padding:10px 0 12px;margin:0 0 4px}
+.liftcover{padding:6px 2px 14px}
+.liftcover .eyebrow{color:var(--rust);font-size:10px;letter-spacing:2px}
+.liftcover h2{font-size:24px;margin:5px 0 8px;color:#9fe8ee}
+.liftcover p{font-size:13.5px;line-height:1.85;color:#bccde0;margin:0}
+.liftsec{padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+.liftsec:last-child{border-bottom:0}
+.ckgroup{font-size:12px;color:var(--rust);letter-spacing:.6px;margin:16px 0 6px;font-weight:700}
+.ckgroup:first-of-type{margin-top:2px}
+.toolbox h2{letter-spacing:.2px}
+
+/* ===== 四模块首页 ===== */
+.homecards.quad{grid-template-columns:repeat(2,1fr);gap:11px}
+.homecard.modcard.jts{border-color:#a9853f;background:linear-gradient(165deg,#2a2418 0%,#1a2434 100%)}
+.homecard.modcard.jts strong{color:#f0cf95}
+.jtsmeta{display:flex;gap:9px;margin:14px 0 4px}
+.jtsmeta>div{flex:1;text-align:center;padding:11px 6px;background:var(--white);border:1px solid var(--line);border-radius:11px}
+.jtsmeta b{display:block;font-size:19px;color:#f0cf95;line-height:1.4}
+.jtsmeta span{font-size:10.5px;color:var(--muted)}
+.jtsbox{border-color:#3a4a60}
+.ptlist{margin:0;padding:0;list-style:none}
+.ptlist li{font-size:13px;line-height:1.85;color:#c7d6e6;padding:11px 0;border-bottom:1px dashed #24384e}
+.ptlist li:last-child{border-bottom:0}
+.ptlist li b{display:block;color:#e8f1fb;font-size:13.5px;margin-bottom:3px;font-weight:700}
 </style><style>.inline-source{display:block;font-size:10px;line-height:1.8;color:#a7b9cf;border-left:2px solid #526d88;padding:5px 9px;margin-top:9px}.deepstudy{margin-top:24px;border-top:1px solid var(--line);padding-top:17px}.deephead{font-size:14px;color:var(--forest);font-weight:700}.deephead span{display:block;font-size:10px;color:var(--muted);font-weight:400}.deepunit{margin:19px 0}.deepunit h3{font-size:14px;color:var(--rust);margin:0 0 7px}.deepunit h3 small{display:block;font-size:10px;color:var(--muted);font-weight:400;margin-top:2px}.deepunit p{font-size:14px;line-height:2;color:#dce5f0;margin:0}.chapterbook .article+.article{border-top:3px solid var(--line)}@media print{.deepunit p{color:black}.inline-source{color:#555}}</style><style>.bookjump{display:grid;gap:4px;margin:16px 0 24px;background:var(--white);padding:15px;border:1px solid var(--line);border-radius:12px}.bookjump a{font-size:12px;padding:5px 0;text-decoration:none}.bookrecord{padding:23px;border-bottom:2px solid var(--line);scroll-margin-top:20px}.bookrecord:last-child{border-bottom:0}.bookrecord h2{font-size:18px;color:var(--forest);line-height:1.6;margin:7px 0}.bookauthor{font-size:11px;color:var(--muted)}.bookrecord dl{margin:16px 0}.bookrecord dt{font-size:11px;color:var(--rust);margin-top:14px;font-weight:700}.bookrecord dd{font-size:13px;color:var(--ink);margin:5px 0;line-height:1.95}.flowtable{min-width:560px}.toolbox .flowwrap{margin:0 -5px;padding-bottom:4px}.chaptertoc button{line-height:1.8}.deepunit p{overflow-wrap:anywhere}@media(max-width:440px){.nav button{font-size:9px}.nav button span{font-size:19px}.bookrecord{padding:18px}}@media print{.bookrecord dd{color:black}}</style><style>
 .booklist{display:grid;gap:10px}.booktile{display:flex;align-items:center;gap:14px;text-align:left;width:100%;padding:19px;border:1px solid var(--line);border-radius:13px;background:var(--white);color:var(--ink);cursor:pointer}.booktile:hover,.topiccard:hover{border-color:var(--forest)}.booknum{align-self:flex-start;font:20px Georgia,serif;color:var(--forest);opacity:.8}.booktile>span:nth-child(2){flex:1;min-width:0}.booktile strong{display:block;font-size:14px;line-height:1.65}.booktile small,.booktile em{display:block;font-size:11px;color:var(--muted);line-height:1.8;font-style:normal;margin-top:5px}.booktile em{color:var(--rust)}.booktile>b{color:var(--forest)}
 .bookcontext,.synthesisbox,.conflictcard{padding:23px;border:1px solid var(--line);border-radius:14px;background:var(--white);margin:18px 0}.bookcontext p,.synthesisbox p,.conflictcard p{font-size:13px;line-height:1.95;margin:10px 0}.bookcontext b{color:var(--rust)}.readingtools{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.chaptertoc small{color:var(--muted);margin-left:8px}.chaptercard{margin:12px 0;border:1px solid var(--line);border-radius:12px;background:var(--white);overflow:hidden;scroll-margin-top:20px}.chaptercard>summary{padding:20px;cursor:pointer;list-style:none;position:relative;padding-right:42px}.chaptercard>summary:after{content:'＋';position:absolute;right:18px;top:22px;color:var(--forest)}.chaptercard[open]>summary:after{content:'−'}.chapterlabel{display:block;font-size:16px;font-weight:700;line-height:1.7}.chaptermeta{display:block;font-size:11px;color:var(--rust);margin-top:5px}.chapterinside{padding:0 22px 24px}.scope{border-top:1px solid var(--line);padding-top:17px;color:var(--muted);font-size:12px;line-height:1.9}.scope b{color:var(--ink)}.sourcelabel{font-size:10px;color:var(--muted);line-height:1.8}.pointlist{padding-left:23px;margin:18px 0}.pointlist>li{padding-left:5px;margin:21px 0}.pointlist>li::marker{color:var(--forest);font-size:13px}.pointlist p{font-size:14px;line-height:1.95;margin:0 0 9px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tagbtn{font-family:inherit;color:var(--forest);background:var(--soft);border:1px solid var(--line);border-radius:5px;padding:4px 8px;font-size:10px;line-height:1.65;text-align:left;cursor:pointer}.tagbtn:hover{border-color:var(--forest)}.boundary{font-size:12px;color:var(--rust);line-height:1.8;padding:12px;border-left:2px solid var(--rust);background:var(--paper)}.chapterfoot{border-top:1px solid var(--line);padding-top:15px;display:flex;flex-wrap:wrap;align-items:center;gap:8px}.chapterfoot a{font-size:11px;margin-right:auto}.topicgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.topiccard{font-family:inherit;text-align:left;padding:20px;border:1px solid var(--line);border-radius:12px;color:var(--ink);background:var(--white);cursor:pointer}.topiccard small{font-size:10px;color:var(--rust)}.topiccard strong{display:block;font-size:16px;margin-top:10px}.topiccard p{font-size:12px;color:var(--muted);line-height:1.8;min-height:36px}.topiccard>span{display:block;color:var(--forest);font-size:11px;border-top:1px solid var(--line);padding-top:12px}.topiccard b{float:right}.synthesisbox h2{font-size:17px;margin:16px 0;color:var(--forest)}.position{padding:15px 0;border-top:1px solid var(--line)}.position>b{font-size:12px;color:var(--rust)}.decision{margin:20px 0 12px;padding:17px;background:var(--paper);border-left:3px solid var(--forest);border-radius:0 9px 9px 0}.decision>b{color:var(--forest);font-size:12px}.decision small{color:var(--muted);font-size:10px;line-height:1.8}.relationlist,.readingroute{display:grid;gap:8px}.relationlist button,.readingroute button{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 15px;font-family:inherit;color:var(--ink);border:1px solid var(--line);background:var(--paper);border-radius:8px;text-align:left;cursor:pointer}.relationlist span{font-size:11px;color:var(--muted)}.relationlist b{font-size:12px;color:var(--forest)}.readingroute small{color:var(--rust)}.readingroute span{flex:1;font-size:13px}.readingroute b{color:var(--forest)}.evidencebook{background:var(--white);border:1px solid var(--line);border-radius:10px;margin:10px 0;overflow:hidden}.evidencebook>summary{padding:16px;cursor:pointer;font-size:13px;line-height:1.8}.evidencebook small{display:block;color:var(--muted);font-size:10px;margin-left:15px}.evidencebody{padding:0 20px}.evidencepoint{border-top:1px solid var(--line);padding:17px 0}.evidencepoint>p{font-size:13px;line-height:1.9}.sourcecite{display:block;font-size:10px;color:var(--muted);line-height:1.8;margin:8px 0}.sourcecite span{display:block}.textbtn{border:0;background:none;color:var(--forest);padding:0;font:inherit;text-align:left;cursor:pointer;line-height:inherit}.sourcecite .textbtn{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}.twoViews{display:grid;grid-template-columns:1fr 1fr;gap:12px}.twoViews>div{padding:15px;background:var(--paper);border-radius:8px}.twoViews b{font-size:12px;color:var(--forest);line-height:1.8}.twoViews .textbtn{font-size:10px}.conflictcard>small{color:var(--rust);font-size:10px}.conflictcard h2{font-size:18px;line-height:1.6}.searchchapter{padding:20px;border:1px solid var(--line);background:var(--white);border-radius:12px;margin:12px 0}.searchchapter>small{font-size:10px;color:var(--muted)}.searchchapter h2{font-size:16px;line-height:1.8}.searchchapter p,.searchchapter li{font-size:12px;line-height:1.9}.searchchapter ul{padding-left:20px}.quickpractice{margin:20px 0}.quickpractice>b{display:block;font-size:12px;margin-bottom:12px}.nav{grid-template-columns:repeat(6,1fr)!important}.homecard>small{color:var(--rust);font-size:10px}.homecard>strong{margin-top:12px}.nav button:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--forest);outline-offset:3px}
@@ -198,8 +224,8 @@ const categories=[['logic','01','底层逻辑','能力、刺激、剂量与阶�
 const view=document.getElementById('view');let current='home';let localOK=true;function read(k,d){try{return JSON.parse(localStorage.getItem('strength_field_v1_'+k))??d}catch{localOK=false;return d}}function write(k,v){try{localStorage.setItem('strength_field_v1_'+k,JSON.stringify(v));return true}catch{localOK=false;return false}}let saved=read('saved',[]),done=read('done',[]),notes=read('notes',{});
 function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function category(id){return categories.find(c=>c[0]===id)}
 const nav=document.getElementById('nav');
-const navItems=[['home','总览','⌂'],['tech','技术','◈'],['rest','休息','☾'],['books','资料','☷'],['more','更多','⋯']];
-function navRender(){const hi=(id)=>id==='tech'?['tech','squat','bench','deadlift'].includes(current)||current.startsWith('lift:'):id==='rest'?['rest','recovery','injury'].includes(current):id===current;nav.innerHTML=navItems.map(([id,label,ico])=>`<button data-go="${id}" class="${hi(id)?'active':''}"><span>${ico}</span>${label}</button>`).join('')}
+const navItems=[['home','总览','⌂'],['jts','JTS','◈'],['basics','基础','≡'],['lifts','动作','Ⅱ'],['rest','休息','☾']];
+function navRender(){const hi=(id)=>id==='lifts'?['lifts','squat','bench','deadlift'].includes(current)||current.startsWith('lift:'):id==='basics'?['basics','logic'].includes(current):id==='rest'?['rest','recovery','injury'].includes(current):id===current;nav.innerHTML=navItems.map(([id,label,ico])=>`<button data-go="${id}" class="${hi(id)?'active':''}"><span>${ico}</span>${label}</button>`).join('')}
 function intro(title,desc,kicker='KNOWLEDGE / 知识框架'){return `<div class="chapterintro"><div class="eyebrow">${kicker}</div><h1>${title}</h1><p>${desc}</p></div>`}
 function legacyHome(){return `<div class="welcome"><span class="eyebrow">PRINCIPLES / METHODS / EVIDENCE</span><h1>读懂不同体系，<br><em>建立自己的训练判断。</em></h1><p>将 17 份独立资料按主题重新整合。既看共同原理，也保留作者分歧与各自的适用条件。</p><div class="thread"><span>原理</span><i>→</i><span>体系</span><i>→</i><span>执行</span><i>→</i><span>反馈</span></div></div><div class="stats"><div><b>${BOOKS.length}</b><span>独立资料</span></div><div><b>${KB.length}</b><span>知识主题</span></div><div><b>${KB.filter(a=>a.cat==='systems').length}</b><span>体系与组织专题</span></div></div><button class="feature" data-go="books"><span class="featureicon">☷</span><div><small>先核对来源覆盖</small><strong>每一本书，整理了什么？</strong><p>查看内容结构、代表观点、进入的章节与引用页码。</p></div><span>→</span></button><div class="sectionhead"><h2>六条互相关联的知识主线</h2><small>全书主干综合 · 纯文字版</small></div><div class="homecards">${[['logic','01','底层原理与动作学习','适应、剂量、教学、模型与个体差异','◎'],['squat','02','三大项动作与弱点','综合 SBS、Rippetoe、舍伊科、Juggernaut','Ⅱ'],['systems','03','力量训练体系','线性、得州、舍伊科、JTS、RTS、共轭与 PTW','≋'],['diagnosis','04','诊断与计划审查','从动作证据到周结构，理解分歧再调整','↗'],['recovery','05','营养与恢复','水盐、宏量、能量、饮食策略与补剂边界','◈'],['injury','06','伤病与训练调整','保留风险分流与回归训练，区分训练书和医疗资料','＋']].map(([id,n,t,d,ico])=>`<button class="homecard" data-go="${id}"><div class="cardtop"><span class="cardicon">${ico}</span><small>${n}</small></div><strong>${t}</strong><p>${d}</p><span class="cardfoot">进入主线 →</span></button>`).join('')}</div><div class="message"><b>这次如何整合</b><br>18 份 PDF 中，Juggernaut 的重复副本按同一来源处理。17 份独立资料均有实际内容归纳和进入正文的章节；原书观点、作者经验、跨书综合与教学示例分别标明。<br>这是主干知识的系统归纳，不是逐页转录，也不声称不同作者所有结论一致。</div>`}
 const related={logic:['strength','dose','specific','weekly'],squat:['sq-hiprise','sq-break','evidence','adjust'],bench:['bp-chest','bp-lock','evidence','protein'],deadlift:['dl-floor','dl-knee','evidence','deload'],diagnosis:['triage','experiment','dose','life'],recovery:['energy','protein','dose','weekly'],injury:['redflags','painrecord','adjust','return'],practice:['evidence','experiment','weekly','dose']};
@@ -232,8 +258,8 @@ function renderBack(){const bar=document.getElementById('backbar');if(!bar)retur
  if(!t){bar.className='backbar';bar.innerHTML='';return}
  bar.className='backbar on';
  bar.innerHTML=`<button class="backbtn" data-go="${t[0]}"><i>←</i>返回${t[1]}</button>`}
-function render(){navRender();renderBack();var bb=document.getElementById('bannerbox'),br=document.getElementById('brandbar');if(bb){var on=(current==='home');bb.style.display=on?'':'none';if(br)br.style.display=on?'none':'flex';}if(current==='home'){view.innerHTML=home()}else if(current==='more')view.innerHTML=moreView();else if(current==='synthesis')view.innerHTML=synthesisView();else if(current==='conflicts')view.innerHTML=conflictsView();else if(current==='confuse')view.innerHTML=confuseView();else if(current.startsWith('book:'))view.innerHTML=oneBook(current.slice(5));else if(current.startsWith('topic:'))view.innerHTML=topicView(current.slice(6));else if(current==='tech')view.innerHTML=techView();else if(current==='rest')view.innerHTML=restView();else if(current.startsWith('lift:'))view.innerHTML=liftView(current.slice(5));else if(current.startsWith('path:'))view.innerHTML=routeView(current.slice(5));else if(category(current))view.innerHTML=categoryView(current);else if(current==='clinic')view.innerHTML=clinic();else if(current==='learn')view.innerHTML=pathView('learn');else if(current==='sources')view.innerHTML=booksView()+sources();else if(current==='saved'){const arr=KB.filter(a=>saved.includes(a.id));const savedChapters=CHAPTERS.filter(c=>saved.includes(c.id));view.innerHTML=intro('我的收藏','把与你当前训练最相关的知识保留在这里。','PERSONAL INDEX / 本机收藏')+(arr.length||savedChapters.length?'<div class="articlelist">'+savedChapters.map(c=>chapterCard(c)).join('')+arr.map(a=>article(a)).join(''):'<div class="empty">还没有收藏。打开任意知识条目，点击“收藏条目”。</div>')}(document.getElementById('crumb')||{}).textContent='FIELD GUIDE / '+(category(current)?.[2]||(current.startsWith('lift:')?'动作闭环':current.startsWith('path:')?'学习路线':({home:'总览',tech:'技术知识',rest:'休息恢复',clinic:'卡点排查',learn:'学习路线',sources:'引用说明',books:'逐书内容',systems:'训练体系',saved:'我的收藏',synthesis:'综合知识',conflicts:'体系对照'}[current]||'知识库')))}
-function go(id){clearTimeout(timer);history.replaceState(null,'',location.pathname+location.search);if(!category(id)&&!['home','tech','rest','clinic','learn','sources','saved','more','synthesis','conflicts','confuse'].includes(id)&&!(id.startsWith('book:')&&bookOf(id.slice(5)))&&!(id.startsWith('topic:')&&topicOf(id.slice(6)))&&!(id.startsWith('lift:')&&LIFTS[id.slice(5)])&&!(id.startsWith('path:')&&ROUTES[id.slice(5)]))id='home';current=id;if(id.startsWith('book:')||id.startsWith('topic:')||id.startsWith('lift:')||id.startsWith('path:')||['synthesis','conflicts','confuse','books','home','tech','rest','logic','squat','bench','deadlift','recovery','injury','diagnosis','systems','practice','clinic','saved','more'].includes(id))history.replaceState(null,'','#'+id);document.getElementById('search').value='';render();window.scrollTo({top:0,behavior:'instant'})}
+function render(){navRender();renderBack();var bb=document.getElementById('bannerbox'),br=document.getElementById('brandbar');if(bb){var on=(current==='home');bb.style.display=on?'':'none';if(br)br.style.display=on?'none':'flex';}if(current==='home'){view.innerHTML=home()}else if(current==='more')view.innerHTML=moreView();else if(current==='synthesis')view.innerHTML=synthesisView();else if(current==='conflicts')view.innerHTML=conflictsView();else if(current==='confuse')view.innerHTML=confuseView();else if(current.startsWith('book:'))view.innerHTML=oneBook(current.slice(5));else if(current.startsWith('topic:'))view.innerHTML=topicView(current.slice(6));else if(current==='tech')view.innerHTML=techView();else if(current==='rest')view.innerHTML=restView();else if(current==='jts')view.innerHTML=jtsView();else if(current==='basics')view.innerHTML=basicsView();else if(current==='lifts')view.innerHTML=liftsView();else if(current.startsWith('lift:'))view.innerHTML=liftView(current.slice(5));else if(current.startsWith('path:'))view.innerHTML=routeView(current.slice(5));else if(category(current))view.innerHTML=categoryView(current);else if(current==='clinic')view.innerHTML=clinic();else if(current==='learn')view.innerHTML=pathView('learn');else if(current==='sources')view.innerHTML=booksView()+sources();else if(current==='saved'){const arr=KB.filter(a=>saved.includes(a.id));const savedChapters=CHAPTERS.filter(c=>saved.includes(c.id));view.innerHTML=intro('我的收藏','把与你当前训练最相关的知识保留在这里。','PERSONAL INDEX / 本机收藏')+(arr.length||savedChapters.length?'<div class="articlelist">'+savedChapters.map(c=>chapterCard(c)).join('')+arr.map(a=>article(a)).join(''):'<div class="empty">还没有收藏。打开任意知识条目，点击“收藏条目”。</div>')}(document.getElementById('crumb')||{}).textContent='FIELD GUIDE / '+(category(current)?.[2]||(current.startsWith('lift:')?'动作闭环':current.startsWith('path:')?'学习路线':({home:'总览',tech:'技术知识',rest:'休息恢复',jts:'JTS 体系',basics:'基础逻辑',lifts:'三大项动作',clinic:'卡点排查',learn:'学习路线',sources:'引用说明',books:'逐书内容',systems:'训练体系',saved:'我的收藏',synthesis:'综合知识',conflicts:'体系对照'}[current]||'知识库')))}
+function go(id){clearTimeout(timer);history.replaceState(null,'',location.pathname+location.search);if(!category(id)&&!['home','tech','rest','jts','basics','lifts','clinic','learn','sources','saved','more','synthesis','conflicts','confuse'].includes(id)&&!(id.startsWith('book:')&&bookOf(id.slice(5)))&&!(id.startsWith('topic:')&&topicOf(id.slice(6)))&&!(id.startsWith('lift:')&&LIFTS[id.slice(5)])&&!(id.startsWith('path:')&&ROUTES[id.slice(5)]))id='home';current=id;if(id.startsWith('book:')||id.startsWith('topic:')||id.startsWith('lift:')||id.startsWith('path:')||['synthesis','conflicts','confuse','books','home','tech','rest','jts','basics','lifts','logic','squat','bench','deadlift','recovery','injury','diagnosis','systems','practice','clinic','saved','more'].includes(id))history.replaceState(null,'','#'+id);document.getElementById('search').value='';render();window.scrollTo({top:0,behavior:'instant'})}
 function openArticle(id){const a=KB.find(a=>a.id===id);if(!a)return;go(a.cat);const e=document.getElementById('a-'+id);e.open=true;e.scrollIntoView({behavior:'smooth',block:'start'});history.replaceState(null,'','#'+id)}
 function legacySearch(q){q=q.trim();if(!q){render();return}const terms=q.toLowerCase().split(/\s+/).filter(Boolean);const scored=KB.map(a=>({a,score:terms.reduce((s,t)=>s+(a.title.toLowerCase().includes(t)?8:0)+([a.lead,a.why,a.observe,a.act,a.check,a.tags,...(a.deep||[]).map(s=>s.text)].join(' ').toLowerCase().includes(t)?1:0),0)})).filter(x=>x.score>0).sort((a,b)=>b.score-a.score);view.innerHTML=intro('搜索结果',`“${esc(q)}” · ${scored.length} 篇相关条目`,'SEARCH / 全文检索')+(scored.length?'<div class="articlelist">'+scored.map(x=>article(x.a)).join(''):'<div class="empty">没有匹配条目。可试试“臀先起”“触点”“离地”“RPE”或“疲劳”。</div>');(document.getElementById('crumb')||{}).textContent='FIELD GUIDE / 搜索'}
 function toggleArray(kind,id,button){const arr=kind==='saved'?saved:done;const at=arr.indexOf(id);at<0?arr.push(id):arr.splice(at,1);const ok=write(kind,arr);button.classList.toggle('on',arr.includes(id));button.textContent=kind==='saved'?(arr.includes(id)?'已收藏':'收藏条目'):(arr.includes(id)?'已读 ✓':'标为已读');if(!ok)button.textContent+=' · 本次会话';const head=document.querySelector('#a-'+id+' summary b');if(kind==='done'&&head){const a=KB.find(a=>a.id===id);head.innerHTML=(done.includes(id)?'<span class="readstatus" aria-label="已读"></span>':'')+esc(a.title)}}
@@ -356,37 +382,8 @@ adv:{title:'高级打磨路线',sub:'练 3 年以上 · 目标：个体化、周
 
 function routeView(id){const r=ROUTES[id];if(!r)return home();return intro(r.title,r.sub,'LEARNING PATH / 学习路线')+`<ol class="steplist">${r.steps.map(([t,d,links])=>`<li><b>${t}</b>${d}${links?'<div class="linkbtns">'+links.map(([go,label])=>go.startsWith('a:')?`<button class="smallbtn" data-article="${go.slice(2)}">${label}</button>`:`<button class="smallbtn" data-go="${go}">${label}</button>`).join('')+'</div>':''}</li>`).join('')}</ol><div class="message"><b>怎么用</b><br>路线是顺序建议，不是课程表。卡在哪一步，就进哪一步对应的页面；别的步骤可以先跳过。</div>`}
 
-const LIFTS={
-squat:{name:'深蹲',model:'sq-model',intro:'从空杆到加重：先学模式，再上重量。任何“加重后变形”，都先回到本页自查。',
-check:['双脚与肩同宽或稍宽，全脚掌踩实，重心落在足中','杠位放稳（高杠斜方肌上部 / 低杠后三角肌），出杠后退三步站定','吸气绷紧腹背（瓦式呼吸），全程保持躯干刚性','屈髋屈膝同时下蹲，膝盖与脚尖同向，至少蹲到大腿平行','底部不停留泄力，整体向上起身，髋膝同时伸展','杠与足中始终在一条垂直线上，上升不持续前倾','每次重复节奏一致：下放可控、起身发力模式相同'],
-steps:[['徒手蹲找深度与平衡','脱鞋、无负重蹲到底，检查脚跟是否离地、重心是否稳。蹲不到底优先解决踝活动度或站距。'],['空杆学支撑','练出杠、退步、站位与呼吸。杠在背上稳定了才开始下降。'],['空杆全程','5 次一组，检查深度、膝轨迹、躯干角度。录侧面视频对照标准要点。'],['轻重量建立模式','每成功一组加重最小档，保持动作不变形；变形立即停。'],['加重与习惯化','进入线性进阶：每次小幅加重，直到连续失败再回到路线页。']],
-errors:[['蹲不到底','踝活动度不足、站距过宽、底部重心失控','脱鞋徒手蹲能否到底','踝灵活性练习、稍收站距、必要时低杠'],['臀先起 / 突然前倾','下降与底部已失衡，而不是“腿弱”','轻重量是否同样出现','先修下降节奏与底部张力，再考虑能力'],['膝盖内扣','臀外展控制不足','正面录像看膝轨迹','重量退一档，热身加弹力带外展'],['底部失控弹跳','下放过快、核心松弛','对比 2–3 秒控制下放','放慢离心，加入暂停蹲'],['一加重就变形','模式尚未牢固就加量','退 20% 重量是否恢复标准','退档重建模式，别硬撑']],
-diag:[['底部起不来 / 深度问题','sq-bottom'],['臀先起','sq-hiprise'],['膝盖与骨盆轨迹','sq-knee'],['加重就变形','sq-break'],['出杠与支撑不适','sq-setup'],['整体框架与身体比例','sq-model']],
-plan:{b:'每次训练都练蹲：3 组 × 5 次，每次成功加重 2.5–5kg。动作变形立即停增。',m:'每周 2 次：一次重（低次数大重量）、一次轻（技术/容量），卡点用对应纠正动作做辅助。'}},
-bench:{name:'卧推',model:'bp-model',intro:'卧推是“搭支撑系统”的动作：身体先稳定，杠才有轨迹可言。',
-check:['肩胛收紧下沉，上背贴凳形成稳定支撑','双脚踩实地面，全程保持腿部张力（含腿驱动准备）','握距约与肩同宽到稍宽，手腕叠在前臂延长线上','出杠后杠位于肩部正上方，肩胛不松散','下放到下胸/触点，肘部与躯干约 45–70° 夹角','触点停顿稳定后，沿回推轨迹推起','杠回到肩部正上方再锁定，全程上背张力不丢'],
-steps:[['先搭支撑','躺凳、收肩胛、双脚定位，空杆做 10 次出杠—收回，支撑不散再继续。'],['找握距与触点','空杆慢速下放，找到手腕不折、肩膀不挤的握距与触点。'],['轻重量全程','下放—触—停—推，检查轨迹是否回到肩正上方。'],['加入腿驱动','体会“腿蹬地→力量传到上背”的张力链，而不是臀部离凳。'],['加重与自查','进入线性进阶，每次加重最小档；出现疼痛或轨迹偏移就回自查表。']],
-errors:[['离胸困难','触点位置、上背支撑、暂停后张力','同重量标准暂停卧推','读 bp-chest 按顺序排查，最后才考虑胸弱'],['中段卡住','轨迹先直上再后移的衔接问题','录像看卡点前轨迹','读 bp-lock，加中段专项变式'],['肩膀不舒服','肘角过宽、肩胛松动','收肩胛+调整肘角对比','读 bp-model 调整握距与夹角'],['手腕疼','杠压在手掌根部','改让杠压在前臂正上方','读 bp-model，必要时护腕'],['臀部离凳','腿驱动过猛','减驱动是否稳定','读 bp-drive，重建腿张力而非蹬臀']],
-diag:[['离胸失败','bp-chest'],['中段与锁定','bp-lock'],['触点与下放','bp-touch'],['推起轨迹与驱动','bp-drive'],['支撑系统','bp-model'],['技术收益与肌肉积累','bp-progress']],
-plan:{b:'每次训练 3 组 × 5 次，加重 1.25–2.5kg；上背收紧优先于重量。',m:'每周 2 次：一次强度日、一次容量/技术日；离胸或中段问题按诊断页配辅助。'}},
-deadlift:{name:'硬拉',model:'dl-model',intro:'硬拉没有离心缓冲，一切从“把松弛拉紧”开始。',
-check:['杠贴胫骨约 2–3cm，杠在足中正上方','风格先选对：传统（髋高肩前）或相扑（更直立），按身体比例定','拉前消除全身松弛——“先拉紧自己，再离地”','背部平直，肩胛在杠正上方','离地由腿启动，杠全程贴腿上升','过膝后专注伸髋站直','锁定 = 站直、髋膝完全展开，不向后甩腰'],
-steps:[['定风格','用空杆/轻重量试传统与相扑，看哪种离地更顺、背部更容易保持平直。'],['学设置','杠位、站距、握距逐项固定，形成每次相同的“起拉仪式”。'],['学张力','轻重量练习“拉紧—离地”：松弛消除后杠自然微微上浮才发力。'],['轻重量全程','贴腿离地—过膝—锁定，录侧面检查背角与杠路径。'],['加重与节奏','硬拉恢复成本高：新手每周 1 次主项，技术组另做轻重量。']],
-errors:[['离地慢 / 起不来','风格不适合、设置不对','换风格或调设置对比','读 dl-floor'],['过膝失败','杠离腿、重心前移','录像看杠路径','读 dl-knee'],['腰部弯起','起始松弛、髋位不对','轻重量重做张力练习','读 dl-tension'],['锁定向后甩腰','把“锁定”当“后仰”','录像看顶点姿态','读 dl-lock，练习站直锁定'],['下背疲劳过大','把技术练习也当成了极限训练','拆分技术组与强度组','读 dl-fatigue']],
-diag:[['风格与设置','dl-model'],['起始张力','dl-tension'],['离地问题','dl-floor'],['过膝失败','dl-knee'],['锁定','dl-lock'],['疲劳与成本','dl-fatigue']],
-plan:{b:'每周 1 次 1 组 × 5 次线性加重；每次先做 2 组轻重量技术组。',m:'每周 1–2 次：强度日 + 技术日分离；弱点用对应变式补。'}}};
 
-function liftView(id){const L=LIFTS[id];if(!L)return home();
-return intro(L.name+' · 学习闭环','标准要点 → 分步学习 → 错误自查 → 卡点诊断 → 起步计划。跟着顺序走，卡住就跳到对应环节。','LIFT LOOP / 动作学习')
-+`<div class="toolbox"><h2>① 标准动作要点（每次训练前过一遍）</h2><ul class="checklist">${L.check.map(c=>`<li>${c}</li>`).join('')}</ul></div>`
-+`<div class="toolbox"><h2>② 分步学习法（新手从空杆开始）</h2><ol class="steplist">${L.steps.map(([t,d])=>`<li><b>${t}</b>${d}</li>`).join('')}</ol></div>`
-+`<div class="toolbox"><h2>③ 常见错误自查表</h2><div class="tablewrap"><table class="cmp"><thead><tr><th>错误现象</th><th>可能原因</th><th>自查方法</th><th>纠正方向</th></tr></thead><tbody>${L.errors.map(r=>`<tr>${r.map((c,i)=>`<td${i===0?' class="rowhead"':''} data-label="${['错误现象','可能原因','自查方法','纠正方向'][i]}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`
-+`<div class="toolbox"><h2>④ 卡点诊断（深入排查）</h2><p class="tablenote">按你的现象打开对应条目，按条目顺序排查，最后才考虑“某部位弱”。</p><div class="linkbtns">${L.diag.map(([pid,label])=>`<button class="smallbtn" data-article="${pid}">${label}</button>`).join('')}</div></div>`
-+`<div class="toolbox"><h2>⑤ 起步计划</h2><p><b>新手</b>　${L.plan.b}</p><p><b>中级</b>　${L.plan.m}</p></div>`
-+`<div class="toolbox"><h2>⑥ 相关资料</h2><div class="linkbtns"><button class="smallbtn" data-article="${L.model}">${L.name}模型条目</button><button class="smallbtn" data-go="confuse">易混对照表</button><button class="smallbtn" data-go="path:beginner">新手路线</button><button class="smallbtn" data-go="path:mid">中级路线</button></div></div>`}
-
-
-/* ===== 两大模块重构：技术知识 / 休息恢复 ===== */
+/* ===== 技术知识：体系与动作修正 ===== */
 const SYSTEMS=[
 {id:'sys-novice',name:'Starting Strength',tag:'新手起步 · 简单线性进阶',
  assume:'新手每次训练后都能在下次训练前恢复，进步主要来自神经适应与少量复合动作的重复。',
@@ -402,7 +399,7 @@ const SYSTEMS=[
  assume:'同一动作或肌群在一周内用不同负荷日训练，能累计刺激而不让每次都成为最大挑战。',
  logic:'把训练日分为重/轻/中，配合上下肢或主项分割，用频率上升换单次负担下降；重日给强度，轻日给技术与血流，中日做容量。',
  stage:'需要提高练习频率、但单次大重量恢复不过来的中级训练者。',
- limit:'日型划分若不与当日表现挂钩易流于形式；"重轻中"与"波动""分阶段"是三个不同维度，不能混用。'},
+ limit:'日型划分若不与当日表现挂钩易流于形式；重轻中与波动、分阶段是三个不同维度，不能混用。'},
 {id:'sys-sheiko',name:'舍伊科',tag:'高容量 · 专项技术积累',
  assume:'竞技动作的技术量与专项能力，可以靠高频率、中低强度的大量重复累积。',
  logic:'以百分比和月度吨位统计组织训练；主项每周多次、多组低次数，强度分布平缓，变式服务于技术；准备期堆量、比赛期收窄专项。',
@@ -416,54 +413,54 @@ const SYSTEMS=[
 {id:'sys-rts',name:'早期 RTS',tag:'自调节 · 用反应修订',
  assume:'当日表现波动大，固定百分比不如用主观努力刻度响应实际状态。',
  logic:'以 RPE/RIR 标定当日负荷，配合容量—强度模块、动作目标与疲劳指标，在训练中实时调整组数与重量；疲劳高时自动减量，状态好时允许超额。',
- stage:'能较准确评估"还剩几次"的中高级训练者。',
+ stage:'能较准确评估还剩几次的中高级训练者。',
  limit:'RPE 是反馈语言不是精密仪器；刻度不准时容易系统性低估或高估努力程度。'},
 {id:'sys-westside',name:'Westside',tag:'共轭 · 多种努力并行',
  assume:'最大力量、速度、肌肉量是不同能力，需要同时用不同方法训练，并靠动作轮换规避适应。',
- logic:'最大努力日轮换主项冲极限，动态努力日用次极限+弹力带练速度，重复努力日用辅助补弱点；三类努力在同一周并行，主项频繁更换。',
+ logic:'最大努力日轮换主项冲极限，动态努力日用次极限加弹力带练速度，重复努力日用辅助补弱点；三类努力在同一周并行，主项频繁更换。',
  stage:'装备或高阶训练者、需要频繁突破单一动作平台的人。',
  limit:'动作轮换频繁，难以衡量长期渐进；方法依赖特定训练文化与装备条件。'},
 {id:'sys-gpp',name:'GPP / SPP',tag:'共轭体系 · 基础建设',
  assume:'一般体能与工作能力是专项表现的底座，但必须与主要训练需求匹配。',
  logic:'用非专项任务（推拉雪橇、负重行走、低强度有氧、躯干训练）建设一般准备（GPP），再逐步转向专项准备（SPP）；关键是让它们服务主线、不抢恢复预算。',
  stage:'休赛期、体能或工作能力明显不足时。',
- limit:'GPP 量过大会挤占专项训练；"一般准备"不等于随便加练，仍需有明确目的。'},
+ limit:'GPP 量过大会挤占专项训练；一般准备不等于随便加练，仍需有明确目的。'},
 {id:'sys-ptw',name:'PowerliftingToWin',tag:'按计划需求分阶段',
- assume:'训练水平应由"需要何种计划变化才能继续进步"定义，而不是训练年限或绝对重量。',
+ assume:'训练水平应由需要何种计划变化才能继续进步来定义，而不是训练年限或绝对重量。',
  logic:'从新手 PNP（每次加重）→ 中级（每周加重）→ 高级（阶段化、个体化），用进阶速率与恢复需求判断何时升段、该换哪种计划结构。',
- stage:'任意阶段判断"我该换计划了吗"。',
+ stage:'任意阶段判断我该换计划了吗。',
  limit:'阶段划分是启发式框架，不覆盖恢复异常、目标切换或生活压力波动。'},
 {id:'sys-sbs',name:'SBS《旅程》',tag:'按发展阶段改变重点',
  assume:'技能、肌肉量与专项力量在不同阶段的优先级不同。',
- logic:'早期重技术与简单进阶，中期提高容量与肌肉量，后期收窄专项并安排峰值；用"发展阶段"而非固定模板选择计划，解释为什么现在该这么练。',
+ logic:'早期重技术与简单进阶，中期提高容量与肌肉量，后期收窄专项并安排峰值；用发展阶段而非固定模板选择计划，解释为什么现在该这么练。',
  stage:'想理解训练重点变化逻辑的中高级训练者。',
  limit:'阶段界限模糊，需要自己判断所处位置；不直接给出可照抄的周计划。'},
 {id:'sys-wave',name:'线性 / 波动 / 分阶段',tag:'概念校准 · 三个不同维度',
  assume:'这三个词常被混为一谈，其实回答的是三个独立问题。',
- logic:'线性或波动回答"重量如何随时间变化"；重轻中回答"周内任务如何分配"；分阶段回答"阶段重点如何排序"。三者可以任意组合，先拆开再谈选型。',
+ logic:'线性或波动回答重量如何随时间变化；重轻中回答周内任务如何分配；分阶段回答阶段重点如何排序。三者可以任意组合，先拆开再谈选型。',
  stage:'审查或设计任何计划前的概念对齐。',
  limit:'只是分类框架，不直接给出处方；不能用来判断某个计划好坏。'}
 ];
 
 const TECH_ERR={
 squat:{name:'深蹲',rows:[
-['蹲不到底','"柔韧性差，硬压下去就行"','先脱鞋徒手蹲确认踝活动度；稍收站距、必要时垫脚跟或改低杠。不靠加大重量硬压深度。'],
-['臀先起、上身突然前倾','"股四头肌太弱，要多练腿"','先看轻重量下是否同样出现；修下降节奏与底部张力，位置稳了再谈能力。'],
-['膝盖内扣','"膝盖力量不够"','正面录像确认轨迹；重量退一档，热身加弹力带外展，重建膝—脚尖同向。'],
-['底部弹跳、泄力','"蹲得越弹越有爆发力"','改为 2–3 秒控制下放 + 暂停蹲，重建底部刚性与整体起身。'],
-['一加重就变形','"今天状态不好，下次硬冲"','退 20% 重量重建模式；动作变形即停止加重，别用意志硬撑。']]},
+['蹲不到底','柔韧性差，硬压下去就行','先脱鞋徒手蹲确认踝活动度；稍收站距、必要时垫脚跟或改低杠。不靠加大重量硬压深度。'],
+['臀先起、上身突然前倾','股四头肌太弱，要多练腿','先看轻重量下是否同样出现；修下降节奏与底部张力，位置稳了再谈能力。'],
+['膝盖内扣','膝盖力量不够','正面录像确认轨迹；重量退一档，热身加弹力带外展，重建膝与脚尖同向。'],
+['底部弹跳、泄力','蹲得越弹越有爆发力','改为 2–3 秒控制下放加暂停蹲，重建底部刚性与整体起身。'],
+['一加重就变形','今天状态不好，下次硬冲','退 20% 重量重建模式；动作变形即停止加重，别用意志硬撑。']]},
 bench:{name:'卧推',rows:[
-['离胸困难','"胸肌力量不足，加飞鸟"','先查触点、上背支撑与暂停后张力；用同重量标准暂停卧推做对比，最后才考虑胸肌。'],
-['中段卡住','"三头弱"','录像看卡点之前轨迹是否先直上再后移；加中段/板推等专项变式，而不是只练三头。'],
-['肩膀不舒服','"正常酸痛，练练就好"','收紧肩胛、收窄肘角与握距；出现疼痛先停加重任务，不要用姿势猜病名。'],
-['手腕疼','"戴护腕就能解决"','让杠压在前臂正上方而非掌根；护腕只是辅助，根本是握杠位置。'],
-['臀部离凳','"腿驱动越强越好"','减小驱动、重建"脚踩地→上背张力"的链条，稳定后再逐步加。']]},
+['离胸困难','胸肌力量不足，加飞鸟','先查触点、上背支撑与暂停后张力；用同重量标准暂停卧推做对比，最后才考虑胸肌。'],
+['中段卡住','三头弱','录像看卡点之前轨迹是否先直上再后移；加中段或板推等专项变式，而不是只练三头。'],
+['肩膀不舒服','正常酸痛，练练就好','收紧肩胛、收窄肘角与握距；出现疼痛先停加重任务，不要用姿势猜病名。'],
+['手腕疼','戴护腕就能解决','让杠压在前臂正上方而非掌根；护腕只是辅助，根本是握杠位置。'],
+['臀部离凳','腿驱动越强越好','减小驱动、重建脚踩地到上背张力的链条，稳定后再逐步加。']]},
 deadlift:{name:'硬拉',rows:[
-['离地慢 / 起不来','"腿部力量不够"','先换风格（传统/相扑）或调站距髋位做对比，不靠一味降低髋位硬拉。'],
-['过膝失败','"锁定或后链弱"','录像看杠是否离腿、重心是否前移；先修前段位置，后段常是前段失位的结果。'],
-['腰部弯起','"核心不够，多练腹肌"','重做"拉紧—离地"张力练习，轻重量建立背角，再逐步加重。'],
-['锁定向后甩腰','"锁定就是要挺得更直"','锁定是站直、髋膝完全展开；看顶点录像，不后仰、不甩腰。'],
-['下背疲劳过大','"练得不够狠"','把技术组与强度组分开；控制每周硬拉的总成本，而不是每次都拉到极限。']]}
+['离地慢 / 起不来','腿部力量不够','先换风格（传统或相扑）或调站距髋位做对比，不靠一味降低髋位硬拉。'],
+['过膝失败','锁定或后链弱','录像看杠是否离腿、重心是否前移；先修前段位置，后段常是前段失位的结果。'],
+['腰部弯起','核心不够，多练腹肌','重做拉紧到离地的张力练习，轻重量建立背角，再逐步加重。'],
+['锁定向后甩腰','锁定就是要挺得更直','锁定是站直、髋膝完全展开；看顶点录像，不后仰、不甩腰。'],
+['下背疲劳过大','练得不够狠','把技术组与强度组分开；控制每周硬拉的总成本，而不是每次都拉到极限。']]}
 };
 
 const REST_NUTR=[
@@ -476,7 +473,7 @@ const REST_NUTR=[
 const REST_TRAIN=[
 ['先把恢复当预算','睡眠、生活压力与训练共用一份恢复预算；纸面合理的计划也可能不适合当下。','life'],
 ['减载校准','用恢复后的反馈校准安排，而不是靠固定天数。','deload'],
-['重建工作能力','"以前做过"不代表现在能立刻恢复旧训练量，需要重新建立容量。','returnvolume']
+['重建工作能力','以前做过不代表现在能立刻恢复旧训练量，需要重新建立容量。','returnvolume']
 ];
 const INJURY_STEPS=[
 ['第 1 步','先分流：识别需要就医的信号','redflags'],
@@ -492,9 +489,9 @@ function secTitle(t,sub){return `<div class="techsection"><h2>${t}</h2>${sub?`<p
 function techView(){return intro('技术知识','两条主线：先看各体系的训练逻辑，再落到三大项的动作标准、易错误区与修正。','TECHNICAL KNOWLEDGE / 技术知识')
 +secTitle('① 各体系的训练逻辑','11 个体系逐个对齐：核心假设 → 训练逻辑 → 适用阶段 → 局限。点开卡片看完整四段，并可跳转到原条目。')
 +`<div class="syslist">${SYSTEMS.map(x=>`<details class="syscard"><summary><b>${x.name}</b><span class="systag">${x.tag}</span><p>${x.logic}</p></summary><div class="sysbody"><p><b>核心假设</b>${x.assume}</p><p><b>适用阶段</b>${x.stage}</p><p><b>局限与边界</b>${x.limit}</p><div class="linkbtns"><button class="smallbtn" data-article="${x.id}">查看原条目 →</button></div></div></details>`).join('')}</div>`
-+secTitle('② 三大项：标准、易错误区与修正','每个动作先过标准要点，再用三列表格定位"哪里错了 → 常被误判成什么 → 具体怎么改"。')
-+['squat','bench','deadlift'].map(id=>{const L=LIFTS[id],E=TECH_ERR[id];return `<div class="toolbox"><h2>${L.name} · 动作标准与修正</h2><ul class="checklist">${L.check.map(c=>`<li>${c}</li>`).join('')}</ul><div class="tablewrap"><table class="cmp"><thead><tr><th>易错点</th><th>常见误区</th><th>如何修正</th></tr></thead><tbody>${E.rows.map(r=>`<tr>${r.map((c,i)=>`<td${i===0?' class="rowhead"':''} data-label="${['易错点','常见误区','如何修正'][i]}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div><div class="linkbtns"><button class="smallbtn" data-go="lift:${id}">进入${L.name}完整闭环 →</button><button class="smallbtn" data-article="${L.model}">${L.name}模型条目</button></div></div>`}).join('')
-+`<div class="message"><b>怎么用</b><br>体系逻辑用来判断"为什么这样安排"，动作标准用来判断"这一组做对了没有"。两者冲突时以动作是否变形、表现是否下降为准。</div>`}
++secTitle('② 三大项：标准、易错误区与修正','完整的分步学习、卡点诊断与纠正动作，见「三大项动作系列」模块。')
++`<div class="linkbtns"><button class="smallbtn" data-go="lifts">进入三大项动作系列 →</button></div>`
++`<div class="message"><b>怎么用</b><br>体系逻辑用来判断为什么这样安排，动作标准用来判断这一组做对了没有。两者冲突时以动作是否变形、表现是否下降为准。</div>`}
 
 function restView(){return intro('休息恢复','训练刺激要能兑现，取决于吃、睡、生活负担与伤病处理。分三块：营养与能量、训练恢复、伤病康复。','RECOVERY / 休息恢复')
 +secTitle('① 营养与能量','先解决总能量，再优化细节；补剂放在最后。按主题点开条目看依据。')
@@ -505,13 +502,174 @@ function restView(){return intro('休息恢复','训练刺激要能兑现，取�
 +`<ol class="steplist">${INJURY_STEPS.map(([n,d,id])=>`<li><b>${n} · ${d}</b><div class="linkbtns">${artBtn(id)}</div></li>`).join('')}</ol>`
 +`<div class="message"><b>边界提示</b><br>本模块是训练任务调整与信息整理，不替代医疗评估。明显外伤、神经症状或持续加重的疼痛，优先就医。</div>`}
 
-function home(){return `<div class="welcome"><span class="eyebrow">STRENGTH COACH · 训练知识库</span><h1>技术怎么练，<br><em>身体怎么养。</em></h1></div><div class="homecards duo">${[['tech','技术知识','11 个训练体系的逻辑 · 三大项动作标准、易错误区与修正'],['rest','休息恢复','营养与能量 · 训练恢复 · 伤病康复']].map(([id,t,d])=>`<button class="homecard modcard" data-go="${id}"><strong>${t}</strong><p>${d}</p><span class="modarrow">→</span></button>`).join('')}</div><div class="homesection"><h2>更多资料</h2><div class="linkbtns">${[['path:beginner','学习路线'],['confuse','易混对照'],['books','逐书逐章'],['synthesis','综合主题'],['conflicts','体系分歧'],['clinic','动作诊所'],['saved','我的收藏']].map(([id,t])=>`<button class="smallbtn" data-go="${id}">${t}</button>`).join('')}</div></div>`}
+const LIFTS={
+squat:{name:'深蹲',en:'SQUAT',model:'sq-model',
+intro:'深蹲的难点不在"蹲下去"，而在下降与底部的衔接：位置对了，起身才有力量可用。',
+groups:[
+ {t:'站距与脚位',items:['双脚约 1.1–1.3 倍肩宽，脚尖外展 15–30°','全脚掌踩实，重心在足中偏后，不压前掌也不翘脚跟','穿硬底鞋或举重鞋，不用软底跑鞋']},
+ {t:'杠位与出杠',items:['高杠放斜方肌上部，低杠放后三角肌上，杠始终贴紧背部','双手对称锁杠，肩胛收紧，肘部不过度后拉','出杠只退 2–3 步，双脚对称站定后再开始下降']},
+ {t:'呼吸与躯干刚性',items:['吸气入腹、绷紧腹背（瓦式呼吸），全程保持刚性','顶部换气或全程屏息，不在底部泄气','躯干角度稳定，不塌腰、不弓背、不左右晃']},
+ {t:'下降与底部',items:['屈髋屈膝同时启动，膝盖始终跟随脚尖方向','下放可控（1–2 秒），蹲到大腿平行或更深','底部不停留泄力，保持张力直接起身']},
+ {t:'上升与锁定',items:['从底部整体起身，髋膝同时伸展，不是先抬臀','杠与足中保持一条垂直线，上升不持续前倾','站直即可，不后仰顶髋、不过度挺腰']}],
+steps:[['徒手蹲找深度','脱鞋、无负重蹲到底，检查脚跟是否离地、重心是否稳。蹲不到底先解决踝活动度或站距，不靠加重硬压。'],
+ ['空杆学出杠','练出杠、退步、对称站定与呼吸。杠在背上稳定了，才开始第一次下降。'],
+ ['空杆全程 + 录像','5 次一组，侧面录像对照标准要点：深度、膝轨迹、躯干角度三项。'],
+ ['轻重量建立模式','每成功一组加重最小档，动作变形立即停；宁慢不歪。'],
+ ['进入线性进阶','3 组 × 5 次持续加重，连续失败再考虑换计划（见基础逻辑·阶段）。']],
+diag:[['底部起不来','深度过深失去张力、底部泄力、踝髋活动度不足','减到可控深度、暂停蹲 2–3 秒重建底部张力'],['平行附近卡住','底部到平行段力量不足、下降过快靠反弹','暂停深蹲、安德森深蹲（从底部启动）'],['上升时臀先起','下降阶段已失衡、躯干刚性不足','节奏深蹲、前蹲补躯干、核心训练'],['出杠后站不稳','杠位不稳、退步过多、脚位不对称','降重量练出杠流程、加宽手距、固定退步数'],['加重后膝内扣','臀外展控制不足','重量退一档、弹力带绕膝深蹲重建轨迹']],
+fixes:[['暂停深蹲','底部控制与起底信心','底部停 2–3 秒再起身，用 60–70% 重量'],['箱蹲','固定深度、教会坐回髋部','轻重量坐箱不泄力，逐渐降低箱高'],['前蹲','躯干直立与股四头','用 50–60% 重量，每周 1 次 3×5'],['安德森深蹲','专攻底部启动','杠放在架上从底部起，重量低于常规深蹲'],['罗马尼亚硬拉','后链与躯干刚性','3×8，控制离心，不追求大重量']],
+vars:[['高杠 / 低杠','高杠更直立、股四主导；低杠前倾多、后链参与多'],['前蹲','躯干直立、股四与上背，适合补前倾'],['暂停蹲 / 箱蹲','底部控制与深度稳定'],['宽站距','髋主导、内收肌参与更多'],['腿举 / 史密斯','辅助容量，不替代自由重量技术']],
+plan:{b:'每次训练 3 组 × 5 次，每次加重 2.5–5kg；动作变形立即停止加重。',m:'每周 2 次：一次重（3–5 次）、一次轻（5–8 次技术或容量），配 2 个纠正动作。',a:'每周 2–3 次，按阶段分配强度与容量；用变式补具体弱点，不用变式替代主项。'}},
 
+bench:{name:'卧推',en:'BENCH PRESS',model:'bp-model',
+intro:'卧推是"把身体搭成支撑系统"：上背、脚、握杠与触点固定了，杠才有稳定轨迹。',
+groups:[
+ {t:'躺姿与支撑',items:['肩胛收紧下沉，上背贴凳，形成稳定支撑面','臀部贴凳、双脚踩实，头背上臀三点稳定','不拱腰成桥过度，保持可重复的起桥高度']},
+ {t:'握距与手腕',items:['握距约 1.5 倍肩宽，前臂在底部接近垂直','手腕中立，杠压在前臂正上方，不折腕','拇指扣杠，握紧后再出杠']},
+ {t:'出杠与起始',items:['出杠后杠位于肩部正上方，肩胛不松','吸气收紧，脚保持张力','起始位置稳定后再开始下放']},
+ {t:'下降与触点',items:['控制下放 1–2 秒，肘与躯干约 45–70°','触点在乳头连线或下胸，左右一致','触胸不弹震、不悬空']},
+ {t:'推起与锁定',items:['沿斜向轨迹推回肩部正上方','上背张力全程不丢，肩胛不前伸','锁定肘伸直即可，不耸肩、不塌肩']}],
+steps:[['躺凳搭支撑','收肩胛、踩实双脚，空杆做 10 次出杠—收回，支撑不散再继续。'],
+ ['空杆找轨迹','空杆慢速下放，找到手腕不折、肩膀不挤的握距与触点。'],
+ ['空杆全程','下放—触—停—推，检查杠是否回到肩正上方。'],
+ ['加入腿驱动','体会"脚蹬地→上背张力"的链条，而不是臀部离凳。'],
+ ['加重与自查','进入线性进阶，每次加重最小档；疼痛或轨迹偏移就回自查表。']],
+diag:[['离胸困难','触点位置、上背支撑、暂停后张力','暂停卧推、Spoto 卧推，最后才考虑胸肌'],['中段卡住','轨迹先直上再后移的衔接问题','板推（2–3 板）、窄距卧推'],['锁定失败','肘部轨迹与三头力量','窄距卧推、地板卧推、三头下压'],['肩膀不适','肘角过宽、肩胛松动、握距过宽','收窄握距与肘角、暂停加重任务'],['臀部离凳','腿驱动过猛、核心不稳','减小驱动、重建张力链']],
+fixes:[['暂停卧推','底部控制与离胸','触胸停 2 秒，60–75% 重量'],['Spoto 卧推','不触胸的底部张力','杠停在触胸前 2–3cm，2–3 秒'],['窄距卧推','三头与锁定','握距收窄一掌，3×5'],['板推','中段力量','2–3 板，重量可略高于常规'],['哑铃卧推','胸肌与稳定','3×8–10，控制下放']],
+vars:[['宽握 / 窄握','宽握缩短行程、窄握强化三头'],['暂停 / Spoto','底部控制与离胸'],['上斜 / 下斜','上胸 / 下胸侧重'],['哑铃 / 器械','辅助容量与稳定'],['地板卧推','去除腿驱动，检验纯上肢']],
+plan:{b:'每次 3 组 × 5 次，加重 1.25–2.5kg；上背收紧优先于重量。',m:'每周 2 次：一次强度日、一次容量或技术日；按诊断配辅助。',a:'每周 2–3 次，按阶段分配；中段与锁定问题用变式专项处理。'}},
+
+deadlift:{name:'硬拉',en:'DEADLIFT',model:'dl-model',
+intro:'硬拉没有离心缓冲，一切从"把松弛拉紧"开始；前段失位，后段一定看起来像"锁定无力"。',
+groups:[
+ {t:'站距与风格',items:['传统：髋较高、肩在杠前；相扑：站宽、躯干更直立','按肢段与杠杆选风格，两种不共用同一髋高模板','脚尖略外展，膝盖跟随脚尖']},
+ {t:'杠位与握法',items:['杠在足中正上方，贴胫骨约 2–3cm','双正握、正反握或助力带按阶段与目的选择','握紧后再建立张力，不边拉边调整']},
+ {t:'起始张力',items:['手臂绷直、背阔收紧，先把松弛拉掉','髋下沉到合适位置，不靠过低髋位硬拉','肩胛在杠正上方，背部平直']},
+ {t:'离地与过膝',items:['腿启动，杠全程贴腿上升','背角稳定，不先抬臀也不先直腿','过膝后专注伸髋，杠不往前飘']},
+ {t:'锁定与下放',items:['锁定 = 站直、髋膝完全展开','不后仰甩腰、不耸肩','下放可控，或按训练目的直接放回']}],
+steps:[['定风格','用空杆或轻重量对比传统与相扑，看哪种离地更顺、背更容易保持平直。'],
+ ['学设置','杠位、站距、握距逐项固定，形成每次相同的起拉流程。'],
+ ['学张力','轻重量练"拉紧—离地"：松弛消除后杠自然微浮才发力。'],
+ ['轻重量全程','贴腿离地—过膝—锁定，侧面录像看背角与杠路径。'],
+ ['拆分技术组与强度组','硬拉恢复成本高：新手每周 1 次主项，技术组另做轻重量。']],
+diag:[['离地慢 / 起不来','风格不适合、设置不对、髋位过低','换风格对比、垫高起拉、deficit 硬拉'],['过膝失败','杠离腿、重心前移','暂停硬拉（膝下）、罗马尼亚硬拉'],['腰部弯起','起始松弛、髋位不对','张力练习、轻重量背角训练'],['锁定困难','前段失位、臀肌不足','臀桥、罗马尼亚硬拉、锁定专项'],['握力先掉','握法或握力不足','正反握/助力带、农夫行走、静态握']],
+fixes:[['暂停硬拉','起始与过膝控制','离地 2cm 或膝下停 2 秒'],['垫高硬拉','锁定与过膝','block pull，重量可高于常规'],['deficit 硬拉','离地力量','站垫木 2–5cm，轻重量'],['罗马尼亚硬拉','后链与躯干','3×8，控制离心'],['臀桥 / 髋推','锁定与臀肌','3×10，顶部停 1 秒'],['农夫行走','握力与躯干','3 组 20–30 米']],
+vars:[['传统 / 相仆','按杠杆与舒适度选'],['暂停 / 垫高 / deficit','分别针对起始、锁定、离地'],['罗马尼亚 / 直腿','后链与腘绳肌'],['六角杠','减少下背负担的替代'],['助力带 / 正反握','握力管理']],
+plan:{b:'每周 1 次 1 组 × 5 次，加重 2.5–5kg；每次先做 2 组轻重量技术组。',m:'每周 1–2 次：强度日 + 技术日分离；硬拉总成本单独计价。',a:'按阶段安排，注意与深蹲的轴向疲劳叠加。'}}};
+
+/* ===== JTS 专属模块 & 基础逻辑模块 ===== */
+const JTS_SECTIONS=[
+{n:'01',t:'体系定位：先评估，再设计',sub:'JTS 不是一套固定计划，而是一条从运动员资料推导到周安排的流程。',
+ pts:[['两本手册的分工','《JTS 力量举计划设计手册》负责从评估到周安排的完整推导；《Juggernaut 力量举诊断手册》负责动作现场与训练问题。'],
+  ['计划是推导结果，不是模板','样例运动员的安排只展示推理过程，不能直接当作自己的答案；同一份计划在不同资料下应得出不同参数。'],
+  ['先有输入，才有方案','教练判断来自原则与个人资料的结合；跳过评估直接抄计划，等于放弃了体系最有价值的部分。'],
+  ['建议阅读顺序','评估 → 容量 → 周安排 → 中周期 → 个人训练单元 → 阶段增益与样例。']],
+ chs:['jts-c01','clinic-c01']},
+{n:'02',t:'评估运动员：计划的输入',sub:'先收集九类资料，让后续每一个数字都有来源。',
+ pts:[['九项输入','性别与体型、力量水平、训练经验、年龄、饮食、睡眠、生活压力、历史训练量、恢复反应。'],
+  ['历史训练量比最好成绩更重要','它更能解释这个人能承受多少，而单次最好成绩往往高估可持续剂量。'],
+  ['力量等级是工具，不是标签','JTS 的成绩等级与 PP、PTW、SBS 的分级定义不同，不能同名互换，也不能拿来互相套用。'],
+  ['饮食与睡眠改变恢复资源','能量是否充足、睡眠质量如何，会同时影响容量估计与阶段推进速度。'],
+  ['评估会被反馈修订','训练中的表现与技术变化会推翻最初假设；评估不是一次贴上的标签。']],
+ chs:['jts-c02','jts-c04']},
+{n:'03',t:'阶段结构：增肌 → 增力 → 冲刺',sub:'阶段目标不同，量、强度与动作选择都要跟着变。',
+ pts:[['增肌期','增加基础，重视有效肌肉刺激与可承受容量；动作可以更远离比赛动作。'],
+  ['增力期','发展较重负荷能力，逐步提高与比赛动作的关联度。'],
+  ['冲刺期','收窄专项，聚焦比赛表现；容量下降、专项强度上升。'],
+  ['减载','用于降低累积疲劳，不是失败后的惩罚，也不等于必须完全停练。'],
+  ['过渡周','赛后从低容量重新适应，避免突然恢复旧训练量。'],
+  ['桥接期','在高度专项训练之间提供变化、较低压力与心理休整，不等同于冲刺期。'],
+  ['时长由需求与比赛日决定','书中的范围是参考，不能替代个人反应与赛历约束。']],
+ chs:['jts-c03','jts-c08']},
+{n:'04',t:'容量：MEV / MRV 与修正',sub:'两个界标之间才是可工作的区间，基准组数只是起点估计。',
+ pts:[['MEV 与 MRV','分别描述产生足够效果的起点与可恢复上限，两者之间构成可工作区间。'],
+  ['基准组数要修正','作者按评估因素给加减项；这些是起始估计，不是测量得到的个人生理常数。'],
+  ['恢复条件同时影响两端','饮食、睡眠与压力既改变刺激需求，也改变恢复余地，不能只按力量等级加组。'],
+  ['不同阶段的组数不可直接比较','增肌期与冲刺期的组数含义不同，横向对比会得出错误结论。'],
+  ['校准依据','实际表现、技术稳定度与恢复趋势，才是修订组数的依据。']],
+ chs:['jts-c04']},
+{n:'05',t:'频率与训练周',sub:'先分任务类型，再把周量放进可用的训练日。',
+ pts:[['两种次数要分开算','需要多少次高压力训练，与需要多少次技术接触，是两个问题。'],
+  ['三大项成本不同','肌肉、神经与结缔组织的恢复成本不一样，不能把三项视为同等负担。'],
+  ['提高频率不必提高总量','把已有周量重新分摊到更多训练日，往往比单纯加量更有效。'],
+  ['可持续执行是设计条件','时间限制与生活安排决定结构；纸面最优但执行不了的计划没有价值。']],
+ chs:['jts-c05']},
+{n:'06',t:'训练单元与三大项弱点',sub:'同一个现象可能有不同原因，先定位再选变式。',
+ pts:[['阶段决定单元重点','增肌期重视刺激与容量；增力与冲刺期逐步提高与比赛动作的关联。'],
+  ['定向适应与适应抵抗','连续练习才能产生定向适应；出现抵抗时再考虑变化，两者需要平衡。'],
+  ['深蹲的四类问题','上背、起底、平行附近、负重信心——对应不同变式，不能只用多蹲解决。'],
+  ['卧推的三段','底部、中程、锁定各有目的；暂停、Spoto、握距变化与辅助增肌要放进整套周量。'],
+  ['硬拉的四段','离地、膝附近、锁定与握力分别检查；变式应针对失速之前的过程。'],
+  ['不能只按外形开动作','同样前倾可能有不同原因；先看轻重量、不同阶段是否同样出现。'],
+  ['机械超负荷要计价','特殊器械提高承重暴露，也增加压力；价值不能只看举得更重。']],
+ chs:['jts-c06','clinic-c03','clinic-c04','clinic-c05']},
+{n:'07',t:'中周期：交替与低中高模型',sub:'把高压力暴露分开，让三项的疲劳不要同时堆积。',
+ pts:[['周期长度的依据','取决于 MEV 到 MRV 之间可用空间、阶段目标与个人恢复。'],
+  ['交替模型','不同训练日或动作承担不同压力，避免同一天把多个高成本任务叠在一起。'],
+  ['低中高模型','把周内负荷分层：低日给技术与恢复，中日给容量，高日给强度检验。'],
+  ['重量选择的三项输入','既往表现、当日感受与阶段要求；某次状态特别好，不等于应立即打乱进程。'],
+  ['比较同角色单元','看相同功能的训练单元是否进步，而不是要求每次训练都高于上一次。'],
+  ['模块之间的衔接','进入下一模块要区分继续同一目标与切换目标，起点不必沿用旧阶段最后一周。']],
+ chs:['jts-c07']},
+{n:'08',t:'阶段增益与六个样例',sub:'前一阶段为后一阶段创造潜力，样例展示的是推导而不是处方。',
+ pts:[['阶段之间是增益关系','增肌提高增力的潜力，增力提高冲刺的潜力；后期仍保留必要的基础刺激。'],
+  ['六种资料，六种结构','部分样例使用多个增肌模块，另一些缩短甚至略过真正的增肌阶段——结构由需求决定，不由日历决定。'],
+  ['高水平情境更依赖交替','用交替负荷与不同推进方式，控制单次高压力的成本。'],
+  ['百分比要辨分母','基于某次重复最大值的百分比与基于 1RM 的百分比不是一回事，复制前必须看清。'],
+  ['样例的用法','价值在于展示资料到参数的推理链，而不是提供可照抄的重量表。']],
+ chs:['jts-c08','jts-c09']},
+{n:'09',t:'诊断手册与使用边界',sub:'动作现场的问题处理，以及这套体系不该被用来做什么。',
+ pts:[['热身','围绕升温、相关肌群与动作准备；不能让热身消耗掉正式训练能力。'],
+  ['深蹲与卧推的现场检查','深蹲先看上背紧张、出杠与站姿；卧推先看上背与脚部支撑，起杠、下降、触点、推起是一条连续链。'],
+  ['硬拉的个体差异','肢段与杠杆决定设置外观；传统与相扑不应使用同一个髋高模板。'],
+  ['装备与辅助的次序','腰带护膝取决于阶段与比赛需求；辅助训练放在主项之后，不为辅助纪录牺牲主项恢复。'],
+  ['训练与医疗的边界','手册明确划出训练指导与伤病诊疗的界限；没有检查不能凭动作描述生成康复诊断。'],
+  ['不要从扫描表格重建重量','扫描件存在识别噪声，精确重量表不可靠；应学习推导方法而非复制数字。']],
+ chs:['clinic-c02','clinic-c06','clinic-c07']}
+];
+
+const BASICS=[
+{n:'01',t:'能力与目标',sub:'先分清练的是什么，再决定怎么练。',ids:['strength','specific','goal']},
+{n:'02',t:'刺激与适应',sub:'刺激有收益，也有成本。',ids:['adapt','volume']},
+{n:'03',t:'剂量的四个旋钮',sub:'容量、强度、努力、频率，互相影响但不可互换。',ids:['dose','rpe']},
+{n:'04',t:'阶段与组织',sub:'重点轮换，而不是所有能力同时最大化。',ids:['period','frequency']},
+{n:'05',t:'体系与模型',sub:'体系是工具箱；模型有共识，也有分歧。',ids:['systems','model-limits']},
+{n:'06',t:'教学与动作学习',sub:'整体—分解—整体，以及辅助动作的迁移。',ids:['teach-whole','press-clean']}
+];
+
+function chapterBtns(ids){return (ids||[]).map(id=>{const c=chapOf(id);return c?`<button class="smallbtn" data-chapter="${id}">${esc(c.title)}</button>`:''}).join('')}
+
+function jtsView(){const cs=CHAPTERS.filter(c=>c.book==='jts'||c.book==='clinic');
+return intro('JTS 体系','Chad Wesley Smith / Juggernaut Training Systems：从运动员评估推导计划，再用诊断手册处理动作现场问题。两本手册全部归入本模块。','JUGGERNAUT / JTS 体系')
++`<div class="jtsmeta"><div><b>2</b><span>本手册</span></div><div><b>${cs.length}</b><span>章</span></div><div><b>${cs.reduce((t,c)=>t+c.points.length,0)}</b><span>个要点</span></div></div>`
++JTS_SECTIONS.map(x=>`<div class="toolbox jtsbox"><h2>${x.n} · ${x.t}</h2><p class="tablenote">${x.sub}</p><ul class="ptlist">${x.pts.map(([t,d])=>`<li><b>${t}</b>${d}</li>`).join('')}</ul><div class="linkbtns">${chapterBtns(x.chs)}</div></div>`).join('')
++`<div class="message"><b>怎么用</b><br>先按 01–02 把自己的输入列清楚，再用 03–05 推出阶段、容量与频率，最后用 06–08 填动作与中周期。诊断手册（09）留到具体动作出问题时查。</div>`}
+
+function basicsView(){return intro('基础逻辑','所有模块共用的底层判断：能力、刺激、剂量、阶段、体系与教学。','FOUNDATIONS / 基础逻辑')
++BASICS.map(x=>`<div class="toolbox"><h2>${x.n} · ${x.t}</h2><p class="tablenote">${x.sub}</p><div class="linkbtns">${x.ids.map(artBtn).join('')}</div></div>`).join('')
++`<div class="message"><b>怎么用</b><br>动作页告诉你这一组做对没有，本模块告诉你为什么要这样安排。两者冲突时，先回到能力与目标。</div>`}
+
+function liftBlock(id){const L=LIFTS[id];if(!L)return '';
+return `<section class="liftsec" id="sec-${id}"><div class="liftcover"><span class="eyebrow">${L.en}</span><h2>${L.name}</h2><p>${L.intro}</p></div>`
++`<div class="toolbox"><h2>① 动作标准</h2>${L.groups.map(g=>`<h3 class="ckgroup">${g.t}</h3><ul class="checklist">${g.items.map(c=>`<li>${c}</li>`).join('')}</ul>`).join('')}</div>`
++`<div class="toolbox"><h2>② 分步学习法</h2><ol class="steplist">${L.steps.map(([t,d])=>`<li><b>${t}</b>${d}</li>`).join('')}</ol></div>`
++`<div class="toolbox"><h2>③ 易错点 · 常见误区 · 如何修正</h2><div class="tablewrap"><table class="cmp"><thead><tr><th>易错点</th><th>常见误区</th><th>如何修正</th></tr></thead><tbody>${TECH_ERR[id].rows.map(r=>`<tr>${r.map((c,i)=>`<td${i===0?' class="rowhead"':''} data-label="${['易错点','常见误区','如何修正'][i]}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`
++`<div class="toolbox"><h2>④ 卡点诊断</h2><p class="tablenote">先按失速位置定位，再往下查设置与前段；不要直接跳到"某块肌肉弱"。</p><div class="tablewrap"><table class="cmp"><thead><tr><th>卡点</th><th>先查什么</th><th>修正方向</th></tr></thead><tbody>${L.diag.map(r=>`<tr>${r.map((c,i)=>`<td${i===0?' class="rowhead"':''} data-label="${['卡点','先查什么','修正方向'][i]}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`
++`<div class="toolbox"><h2>⑤ 弱点纠正动作</h2><div class="tablewrap"><table class="cmp"><thead><tr><th>动作</th><th>针对</th><th>怎么用</th></tr></thead><tbody>${L.fixes.map(r=>`<tr>${r.map((c,i)=>`<td${i===0?' class="rowhead"':''} data-label="${['动作','针对','怎么用'][i]}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`
++`<div class="toolbox"><h2>⑥ 常见变式与用途</h2><div class="tablewrap"><table class="cmp"><thead><tr><th>变式</th><th>用途</th></tr></thead><tbody>${L.vars.map(r=>`<tr>${r.map((c,i)=>`<td${i===0?' class="rowhead"':''} data-label="${['变式','用途'][i]}">${c}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>`
++`<div class="toolbox"><h2>⑦ 训练安排</h2><p><b>新手</b>${L.plan.b}</p><p><b>中级</b>${L.plan.m}</p><p><b>高级</b>${L.plan.a}</p></div>`
++`<div class="toolbox"><h2>⑧ 相关资料</h2><div class="linkbtns"><button class="smallbtn" data-article="${L.model}">${L.name}模型条目</button><button class="smallbtn" data-go="tech">技术知识总览</button><button class="smallbtn" data-go="confuse">易混对照表</button></div></div></section>`}
+
+function liftTabs(){return `<div class="lifttabs liftnav">${['squat','bench','deadlift'].map(id=>`<button data-scroll="sec-${id}" class="${current==='lift:'+id?'on':''}">${LIFTS[id].name}</button>`).join('')}</div>`}
+function liftView(id){const L=LIFTS[id];if(!L)return liftsView();return intro(L.name+' · 完整动作页','八个部分：动作标准、分步学习、易错修正、卡点诊断、纠正动作、变式、训练安排、相关资料。','LIFT DETAIL / '+L.en)+liftTabs()+liftBlock(id)}
+function liftsView(){return intro('三大项动作系列','深蹲、卧推、硬拉各一整套：标准要点分组 → 分步学习 → 易错与修正 → 卡点诊断 → 纠正动作 → 变式 → 训练安排。','THE BIG THREE / 动作系列')+liftTabs()+['squat','bench','deadlift'].map(liftBlock).join('')}
+
+function home(){return `<div class="welcome"><span class="eyebrow">STRENGTH COACH · 训练知识库</span><h1>从体系到动作，<br><em>从训练到恢复。</em></h1></div><div class="homecards quad">${[['jts','JTS 体系','Chad Wesley Smith · 计划 + 诊断手册',1],['basics','基础逻辑','能力、刺激、剂量、阶段与体系'],['lifts','三大项动作系列','动作标准 · 分步学习 · 易错修正 · 卡点诊断'],['rest','休息恢复','营养与能量 · 训练恢复 · 伤病康复']].map(([id,t,d,hot])=>`<button class="homecard modcard${hot?' jts':''}" data-go="${id}"><strong>${t}</strong><p>${d}</p><span class="modarrow">→</span></button>`).join('')}</div><div class="homesection"><h2>更多资料</h2><div class="linkbtns">${[['tech','技术知识总览'],['path:beginner','学习路线'],['confuse','易混对照'],['books','逐书逐章'],['synthesis','综合主题'],['clinic','动作诊所'],['saved','我的收藏']].map(([id,t])=>`<button class="smallbtn" data-go="${id}">${t}</button>`).join('')}</div></div>`}
 function booksView(){return chapterBooks()}
 function search(q){return chapterSearch(q)}
 
-document.addEventListener('click',e=>{let b=e.target.closest('button');if(!b)return;if(b.dataset.go)go(b.dataset.go);else if(b.dataset.path)go('learn');else if(b.dataset.article)openArticle(b.dataset.article);else if(b.dataset.save)toggleArray('saved',b.dataset.save,b);else if(b.dataset.read)toggleArray('done',b.dataset.read,b);else if(b.dataset.notetoggle){let box=document.getElementById('note-'+b.dataset.notetoggle);box.hidden=!box.hidden;b.setAttribute('aria-expanded',!box.hidden);if(!box.hidden)box.querySelector('textarea').focus()}else if(b.dataset.print)printArticle(b.dataset.print);else if(b.dataset.lift){selectedLift=b.dataset.lift;selectedCase=0;view.innerHTML=clinic()}else if(b.dataset.case!==undefined){selectedCase=Number(b.dataset.case);view.innerHTML=clinic()}else if(b.id==='exportNotes'){const blob=new Blob([JSON.stringify({format:'strength-field-notes-v1',saved,done,notes},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='strength-field-notes.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);document.getElementById('exportStatus').textContent='已生成笔记备份下载。'}});
+document.addEventListener('click',e=>{let b=e.target.closest('button');if(!b)return;if(b.dataset.go)go(b.dataset.go);else if(b.dataset.scroll){const el=document.getElementById(b.dataset.scroll);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}else if(b.dataset.path)go('learn');else if(b.dataset.article)openArticle(b.dataset.article);else if(b.dataset.save)toggleArray('saved',b.dataset.save,b);else if(b.dataset.read)toggleArray('done',b.dataset.read,b);else if(b.dataset.notetoggle){let box=document.getElementById('note-'+b.dataset.notetoggle);box.hidden=!box.hidden;b.setAttribute('aria-expanded',!box.hidden);if(!box.hidden)box.querySelector('textarea').focus()}else if(b.dataset.print)printArticle(b.dataset.print);else if(b.dataset.lift){selectedLift=b.dataset.lift;selectedCase=0;view.innerHTML=clinic()}else if(b.dataset.case!==undefined){selectedCase=Number(b.dataset.case);view.innerHTML=clinic()}else if(b.id==='exportNotes'){const blob=new Blob([JSON.stringify({format:'strength-field-notes-v1',saved,done,notes},null,2)],{type:'application/json'});const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='strength-field-notes.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);document.getElementById('exportStatus').textContent='已生成笔记备份下载。'}});
 document.addEventListener('input',e=>{const id=e.target.dataset.note;if(!id)return;notes[id]=e.target.value;const ok=write('notes',notes);document.querySelector(`[data-notestatus="${id}"]`).textContent=ok?'已保存在当前浏览器':'无法持久保存，请复制笔记备份。'});
-let timer;document.getElementById('search').addEventListener('input',e=>{clearTimeout(timer);let q=e.target.value;timer=setTimeout(()=>search(q),150)});document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();clearTimeout(timer);search(document.getElementById('search').value)});document.getElementById('clearSearch').onclick=()=>{clearTimeout(timer);document.getElementById('search').value='';render()};const initial=decodeURIComponent(location.hash.slice(1));render();if(initial.startsWith('chapter:'))openChapter(initial.slice(8));else if(initial.startsWith('book:')||initial.startsWith('topic:')||['synthesis','conflicts','confuse','books','home','logic','squat','bench','deadlift','recovery','injury','diagnosis','systems','practice','clinic','saved','more','tech','rest'].includes(initial)||initial.startsWith('lift:')||initial.startsWith('path:'))go(initial);else if(KB.some(a=>a.id===initial))openArticle(initial);
+let timer;document.getElementById('search').addEventListener('input',e=>{clearTimeout(timer);let q=e.target.value;timer=setTimeout(()=>search(q),150)});document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();clearTimeout(timer);search(document.getElementById('search').value)});document.getElementById('clearSearch').onclick=()=>{clearTimeout(timer);document.getElementById('search').value='';render()};const initial=decodeURIComponent(location.hash.slice(1));render();if(initial.startsWith('chapter:'))openChapter(initial.slice(8));else if(initial.startsWith('book:')||initial.startsWith('topic:')||['synthesis','conflicts','confuse','books','home','logic','squat','bench','deadlift','recovery','injury','diagnosis','systems','practice','clinic','saved','more','tech','rest','jts','basics','lifts'].includes(initial)||initial.startsWith('lift:')||initial.startsWith('path:'))go(initial);else if(KB.some(a=>a.id===initial))openArticle(initial);
 
 </script></body></html>
